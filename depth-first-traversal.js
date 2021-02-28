@@ -1,3 +1,5 @@
+//learning depth first traversal with tutorial from Brian Holt
+
 const preorderTraverse = (node, array) => {
   // fill this out
   if (!node) {
