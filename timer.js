@@ -1,3 +1,7 @@
+// vanilla javascript timer that logs time into console, has start, pause and stop funcitonality
+
+
+//declare variables
 var startTime;
 var updatedTime;
 var difference;
@@ -7,7 +11,7 @@ var savedTime;
 var paused = false;
 var running = false;
 
-
+//start timer
 function startTimer() {
   
     startTime = new Date().getTime();
@@ -17,6 +21,7 @@ function startTimer() {
     running = true;
 }
 
+//pause timer
 function pauseTimer() {
     if (!paused && running) {
       clearInterval(timerInterval);
@@ -31,6 +36,7 @@ function pauseTimer() {
     }
 }
 
+//stop timer
 function stopTimer () {
     if (running) {
       clearInterval(timerInterval);
@@ -43,6 +49,7 @@ function stopTimer () {
     else return;
 }
 
+//log time to console
 function showTime() {
    
   updatedTime = new Date().getTime();
@@ -67,8 +74,9 @@ function showTime() {
 
 startTimer();
 
-// setTimeout(pauseTimer, 2000);
-// setTimeout(pauseTimer, 3000);
-setTimeout(stopTimer, 2000);
-setTimeout(startTimer, 2001);
+//functions to show timer uses
+setTimeout(pauseTimer, 2000);
+setTimeout(pauseTimer, 3000);
+setTimeout(stopTimer, 4000);
+setTimeout(startTimer, 4001);
 setTimeout(stopTimer, 7000);
