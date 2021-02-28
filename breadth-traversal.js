@@ -1,3 +1,5 @@
+//learning breadth first traversal with tutorial from Brian Holt
+
 const breadthFirstTraverse = (queue, array) => {
   // fill code in here
   if (!queue || !queue.length) retun array;
